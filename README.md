@@ -23,22 +23,31 @@ Simples, direto e funcional — ideal para gerar legendas, anotações ou facili
 
 ```bash
 pip install moviepy openai-whisper
+```
 
 2. No código, defina o caminho do seu vídeo na variável video_path:
+```bash
 video_path = "seu_video.mp4"
+```
 
 3. Execute o script:
+```bash
 python main.py
+```
 
 4. A transcrição será salva em um arquivo transcricao.txt no mesmo diretório.
 
-⚙️ Modelos disponíveis
+## ⚙️ Modelos disponíveis :
 
 O Whisper permite escolher entre diferentes tamanhos de modelos:
+```bash
   tiny, base, small, medium, large
-
+```
 Quanto maior o modelo, maior a precisão — mas também o tempo de execução.
+```bash
 model = whisper.load_model("medium")
-
+```
 💡 Exemplo de saída
+```bash
 Transcrição salva.
+```
